@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e041a4, #4336df);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .remember {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .remember input {
+      margin-right: 8px;
+    }
+
+    .login-form button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #e041a4;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .or {
+      text-align: center;
+      margin: 20px 0 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .facebook, .google {
+      width: 48%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .signup {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .signup a {
+      text-decoration: none;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="login-form">
+      <h2>LOGIN</h2>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <label class="remember">
+        <input type="checkbox" checked /> Remember me
+      </label>
+      <button type="submit">LOGIN</button>
+      <div class="or">Or login with</div>
+      <div class="social-login">
+        <button class="facebook">Facebook</button>
+        <button class="google">Google</button>
+      </div>
+      <p class="signup">Not a member? <a href="#">Sign up now</a></p>
+    </form>
+  </div>
+</body>
+</html>
